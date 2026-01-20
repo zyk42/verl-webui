@@ -942,11 +942,11 @@ with gr.Blocks(title="Verl Configuration Generator") as demo:
 
             # Logic for visibility
             def update_ref_visibility(enable, mode):
-                return {
-                    ref_params_group: gr.update(visible=enable),
-                    actor_kl_group: gr.update(visible=enable and mode == "use_kl_loss"),
-                    reward_kl_group: gr.update(visible=enable and mode == "use_kl_in_reward")
-                }
+                return (
+                    gr.update(visible=enable),
+                    gr.update(visible=enable and mode == "use_kl_loss"),
+                    gr.update(visible=enable and mode == "use_kl_in_reward")
+                )
 
             ref_enable.change(
                 fn=update_ref_visibility,
@@ -1181,7 +1181,7 @@ with gr.Blocks(title="Verl Configuration Generator") as demo:
             
             ref_acc, ref_markdown,
             ref_enable, ref_mode,
-            actor_kl_loss_coef, actor_kl_loss_type,
+            actor_kl_loss_type, actor_kl_loss_coef,
             algo_kl_penalty, algo_kl_coef,
             ref_log_prob_micro_batch_size_per_gpu,
             
