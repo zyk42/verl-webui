@@ -15,7 +15,7 @@ This WebUI provides an intuitive way to configure various components of VERL, in
 
 We provide a user-friendly Web Interface (WebUI) to generate training configurations and commands easily.
 
-![WebUI Screenshot Placeholder](screenshot.png)
+![WebUI Screenshot Placeholder](figure/verl-webui.png)
 
 ### 🚀 Quick Start
 
@@ -64,14 +64,19 @@ For Windows users, we provide a convenient PowerShell script `run_webui.ps1`.
 
 The WebUI allows you to configure the following modules:
 
-*   **Data Configuration**: Setup training and validation datasets, batch sizes, and prompt lengths.
-*   **Model Configuration**:
-    *   **Actor**: Configure the policy model, PPO hyperparameters, and strategies (FSDP/Megatron).
-    *   **Reference Model**: Enable/Disable reference models with flexible KL implementation choices (`use_kl_loss` or `use_kl_in_reward`).
-    *   **Critic Model**: Configure value function models.
-    *   **Reward Model**: Setup reward model parameters and managers (Naive, Prime, DAPO).
-*   **Algorithm**: Choose between GAE, GRPO, Reinforce++, and more.
-*   **Trainer**: Manage experiment names, logging (WandB, Tensorboard, etc.), and checkpointing.
+**Data Configuration**: Setup training and validation datasets, batch sizes, and prompt lengths.
+![Configuration Section Screenshot Placeholder](figure/data.png)
+**Actor Configuration**:
+![Configuration Section Screenshot Placeholder](figure/actor.png)
+**Reference Model**: Enable/Disable reference models with flexible KL implementation choices (`use_kl_loss` or `use_kl_in_reward`).
+![Configuration Section Screenshot Placeholder](figure/reference.png)
+**Critic Model**: Configure value function models.
+![Configuration Section Screenshot Placeholder](figure/critic.png)
+**Reward Model**: Setup reward model parameters and managers (Naive, Prime, DAPO).
+![Configuration Section Screenshot Placeholder](figure/reward.png)
+**Algorithm**: Choose between GAE, GRPO, Reinforce++, and more.
+![Configuration Section Screenshot Placeholder](figure/algorithm.png)
+**Trainer**: Manage experiment names, logging (WandB, Tensorboard, etc.), and checkpointing.
+![Configuration Section Screenshot Placeholder](figure/trainer.png)
 
-![Configuration Section Screenshot Placeholder](figure/screenshot.png)
 
