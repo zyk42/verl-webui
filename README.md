@@ -2,8 +2,6 @@
 
 VERL WebUI is a user-friendly graphical interface designed for **[VERL](https://github.com/volcengine/verl)** (Volcano Engine Reinforcement Learning). It simplifies the configuration and command generation for RLHF training of Large Language Models.
 
-![Project Logo/Banner Placeholder](path/to/logo.png)
-
 ## Introduction
 
 This WebUI provides an intuitive way to configure various components of VERL, including PPO/GRPO algorithms, model parameters (Actor, Critic, Reward, Reference), and data settings. It streamlines the process of generating complex training commands for large-scale RLHF experiments without needing to manually write lengthy shell scripts.
@@ -17,7 +15,7 @@ This WebUI provides an intuitive way to configure various components of VERL, in
 
 We provide a user-friendly Web Interface (WebUI) to generate training configurations and commands easily.
 
-![WebUI Screenshot Placeholder](path/to/webui_screenshot.png)
+![WebUI Screenshot Placeholder](screenshot.png)
 
 ### 🚀 Quick Start
 
